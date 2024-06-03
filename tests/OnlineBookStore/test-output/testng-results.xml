@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-03T00:15:08 IST" name="Suite" finished-at="2024-06-03T00:15:30 IST" duration-ms="22073">
+    <groups>
+    </groups>
+    <test started-at="2024-06-03T00:15:08 IST" name="Test" finished-at="2024-06-03T00:15:30 IST" duration-ms="22073">
+      <class name="api.test.SearchBooks">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.SearchBooks@4b23c30a]" started-at="2024-06-03T00:15:22 IST" name="setup" finished-at="2024-06-03T00:15:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="successfulSearchBooks()[pri:0, instance:api.test.SearchBooks@4b23c30a]" started-at="2024-06-03T00:15:22 IST" name="successfulSearchBooks" finished-at="2024-06-03T00:15:24 IST" duration-ms="1484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulSearchBooks -->
+        <test-method signature="wrongSearchData()[pri:0, instance:api.test.SearchBooks@4b23c30a]" started-at="2024-06-03T00:15:24 IST" name="wrongSearchData" finished-at="2024-06-03T00:15:25 IST" duration-ms="1531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongSearchData -->
+      </class> <!-- api.test.SearchBooks -->
+      <class name="api.test.AddToCart">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.AddToCart@56928307]" started-at="2024-06-03T00:15:15 IST" name="setup" finished-at="2024-06-03T00:15:15 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AddtoCart(org.testng.ITestContext)[pri:0, instance:api.test.AddToCart@56928307]" started-at="2024-06-03T00:15:15 IST" name="AddtoCart" finished-at="2024-06-03T00:15:16 IST" duration-ms="1460" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4cb00fa5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddtoCart -->
+        <test-method signature="missingDetails(org.testng.ITestContext)[pri:0, instance:api.test.AddToCart@56928307]" started-at="2024-06-03T00:15:16 IST" name="missingDetails" finished-at="2024-06-03T00:15:18 IST" duration-ms="1255" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4cb00fa5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- missingDetails -->
+        <test-method signature="noInputDetails(org.testng.ITestContext)[pri:0, instance:api.test.AddToCart@56928307]" started-at="2024-06-03T00:15:18 IST" name="noInputDetails" finished-at="2024-06-03T00:15:19 IST" duration-ms="1095" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4cb00fa5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noInputDetails -->
+      </class> <!-- api.test.AddToCart -->
+      <class name="api.test.UserRegistration">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.UserRegistration@9ebe38b]" started-at="2024-06-03T00:15:19 IST" name="setup" finished-at="2024-06-03T00:15:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="missingDetails()[pri:0, instance:api.test.UserRegistration@9ebe38b]" started-at="2024-06-03T00:15:19 IST" name="missingDetails" finished-at="2024-06-03T00:15:20 IST" duration-ms="1224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- missingDetails -->
+        <test-method signature="successfulRegistration()[pri:0, instance:api.test.UserRegistration@9ebe38b]" started-at="2024-06-03T00:15:20 IST" name="successfulRegistration" finished-at="2024-06-03T00:15:21 IST" duration-ms="1282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulRegistration -->
+        <test-method signature="withoutInputData()[pri:0, instance:api.test.UserRegistration@9ebe38b]" started-at="2024-06-03T00:15:21 IST" name="withoutInputData" finished-at="2024-06-03T00:15:22 IST" duration-ms="1251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withoutInputData -->
+      </class> <!-- api.test.UserRegistration -->
+      <class name="api.test.UserLogin">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.UserLogin@7a1a14a4]" started-at="2024-06-03T00:15:08 IST" name="setup" finished-at="2024-06-03T00:15:08 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="missingDetails()[pri:0, instance:api.test.UserLogin@7a1a14a4]" started-at="2024-06-03T00:15:08 IST" name="missingDetails" finished-at="2024-06-03T00:15:12 IST" duration-ms="3411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- missingDetails -->
+        <test-method signature="noInputData()[pri:0, instance:api.test.UserLogin@7a1a14a4]" started-at="2024-06-03T00:15:12 IST" name="noInputData" finished-at="2024-06-03T00:15:13 IST" duration-ms="1428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noInputData -->
+        <test-method signature="successfulLogin(org.testng.ITestContext)[pri:0, instance:api.test.UserLogin@7a1a14a4]" started-at="2024-06-03T00:15:13 IST" name="successfulLogin" finished-at="2024-06-03T00:15:15 IST" duration-ms="1666" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4cb00fa5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulLogin -->
+      </class> <!-- api.test.UserLogin -->
+      <class name="api.test.Checkout">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.Checkout@38089a5a]" started-at="2024-06-03T00:15:25 IST" name="setup" finished-at="2024-06-03T00:15:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkout(org.testng.ITestContext)[pri:0, instance:api.test.Checkout@38089a5a]" started-at="2024-06-03T00:15:25 IST" name="checkout" finished-at="2024-06-03T00:15:27 IST" duration-ms="1508" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4cb00fa5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkout -->
+        <test-method signature="missingvalues(org.testng.ITestContext)[pri:0, instance:api.test.Checkout@38089a5a]" started-at="2024-06-03T00:15:27 IST" name="missingvalues" finished-at="2024-06-03T00:15:28 IST" duration-ms="1104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4cb00fa5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- missingvalues -->
+        <test-method signature="noInputData(org.testng.ITestContext)[pri:0, instance:api.test.Checkout@38089a5a]" started-at="2024-06-03T00:15:28 IST" name="noInputData" finished-at="2024-06-03T00:15:29 IST" duration-ms="1069" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4cb00fa5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noInputData -->
+        <test-method signature="withoutCardDetails(org.testng.ITestContext)[pri:0, instance:api.test.Checkout@38089a5a]" started-at="2024-06-03T00:15:29 IST" name="withoutCardDetails" finished-at="2024-06-03T00:15:30 IST" duration-ms="1078" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4cb00fa5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withoutCardDetails -->
+      </class> <!-- api.test.Checkout -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jun 03 00:15:08 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>22 seconds (22073 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='api.test.UserRegistration.missingDetails()'><b>missingDetails</b><br>Test class: api.test.UserRegistration</td>
+<td></td>
+<td>1</td>
+<td>api.test.UserRegistration@9ebe38b</td></tr>
+<tr>
+<td title='api.test.SearchBooks.wrongSearchData()'><b>wrongSearchData</b><br>Test class: api.test.SearchBooks</td>
+<td></td>
+<td>1</td>
+<td>api.test.SearchBooks@4b23c30a</td></tr>
+<tr>
+<td title='api.test.UserLogin.missingDetails()'><b>missingDetails</b><br>Test class: api.test.UserLogin</td>
+<td></td>
+<td>3</td>
+<td>api.test.UserLogin@7a1a14a4</td></tr>
+<tr>
+<td title='api.test.Checkout.noInputData()'><b>noInputData</b><br>Test class: api.test.Checkout<br>Parameters: org.testng.TestRunner@4cb00fa5</td>
+<td></td>
+<td>1</td>
+<td>api.test.Checkout@38089a5a</td></tr>
+<tr>
+<td title='api.test.Checkout.missingvalues()'><b>missingvalues</b><br>Test class: api.test.Checkout<br>Parameters: org.testng.TestRunner@4cb00fa5</td>
+<td></td>
+<td>1</td>
+<td>api.test.Checkout@38089a5a</td></tr>
+<tr>
+<td title='api.test.UserLogin.successfulLogin()'><b>successfulLogin</b><br>Test class: api.test.UserLogin<br>Parameters: org.testng.TestRunner@4cb00fa5</td>
+<td></td>
+<td>1</td>
+<td>api.test.UserLogin@7a1a14a4</td></tr>
+<tr>
+<td title='api.test.AddToCart.noInputDetails()'><b>noInputDetails</b><br>Test class: api.test.AddToCart<br>Parameters: org.testng.TestRunner@4cb00fa5</td>
+<td></td>
+<td>1</td>
+<td>api.test.AddToCart@56928307</td></tr>
+<tr>
+<td title='api.test.UserRegistration.withoutInputData()'><b>withoutInputData</b><br>Test class: api.test.UserRegistration</td>
+<td></td>
+<td>1</td>
+<td>api.test.UserRegistration@9ebe38b</td></tr>
+<tr>
+<td title='api.test.Checkout.withoutCardDetails()'><b>withoutCardDetails</b><br>Test class: api.test.Checkout<br>Parameters: org.testng.TestRunner@4cb00fa5</td>
+<td></td>
+<td>1</td>
+<td>api.test.Checkout@38089a5a</td></tr>
+<tr>
+<td title='api.test.UserLogin.noInputData()'><b>noInputData</b><br>Test class: api.test.UserLogin</td>
+<td></td>
+<td>1</td>
+<td>api.test.UserLogin@7a1a14a4</td></tr>
+<tr>
+<td title='api.test.AddToCart.AddtoCart()'><b>AddtoCart</b><br>Test class: api.test.AddToCart<br>Parameters: org.testng.TestRunner@4cb00fa5</td>
+<td></td>
+<td>1</td>
+<td>api.test.AddToCart@56928307</td></tr>
+<tr>
+<td title='api.test.Checkout.checkout()'><b>checkout</b><br>Test class: api.test.Checkout<br>Parameters: org.testng.TestRunner@4cb00fa5</td>
+<td></td>
+<td>1</td>
+<td>api.test.Checkout@38089a5a</td></tr>
+<tr>
+<td title='api.test.SearchBooks.successfulSearchBooks()'><b>successfulSearchBooks</b><br>Test class: api.test.SearchBooks</td>
+<td></td>
+<td>1</td>
+<td>api.test.SearchBooks@4b23c30a</td></tr>
+<tr>
+<td title='api.test.AddToCart.missingDetails()'><b>missingDetails</b><br>Test class: api.test.AddToCart<br>Parameters: org.testng.TestRunner@4cb00fa5</td>
+<td></td>
+<td>1</td>
+<td>api.test.AddToCart@56928307</td></tr>
+<tr>
+<td title='api.test.UserRegistration.successfulRegistration()'><b>successfulRegistration</b><br>Test class: api.test.UserRegistration</td>
+<td></td>
+<td>1</td>
+<td>api.test.UserRegistration@9ebe38b</td></tr>
+</table><p>
+</body>
+</html>

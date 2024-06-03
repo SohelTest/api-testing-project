@@ -1,0 +1,1 @@
+{"uuid":"02a0668c-eae7-4761-939b-ad1c6f179985","name":"api.test.UserLogin","children":["b8d5115b-1f61-4cb0-9919-9954d6003ba9"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1717323802751,"stop":1717323802754}],"afters":[],"start":1717323802731,"stop":1717323811462}

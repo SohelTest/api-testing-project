@@ -1,0 +1,962 @@
+{
+	"info": {
+		"_postman_id": "5f923c0c-1e30-42e5-8d6a-76127d75a6a4",
+		"name": "Online-Book-Store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23912285"
+	},
+	"item": [
+		{
+			"name": "users/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"username\": \"user\",\n    \"email\": \"username@gmail.com\",\n    \"name\": \"username\",\n    \"address\": \"USA\",\n    \"phone\": \"202-555-0118\""
+				},
+				"url": {
+					"raw": "{{url}}/users/register",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UserRegistration",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"Roy\",\n    \"email\": \"roy@gmail.com\",\n    \"name\": \"Roy Walter\",\n    \"address\": \"USA\",\n    \"phone\": \"202-555-0118\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://3d475813-89a1-40d4-9662-0fd6c9215d96.mock.pstmn.io/users/register",
+							"protocol": "https",
+							"host": [
+								"3d475813-89a1-40d4-9662-0fd6c9215d96",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"users",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": ""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"User registration successful\",\n    \"user\": {\n        \"id\": \"1\",\n        \"username\": \"Roy\",\n        \"email\": \"roy@gmail.com\",\n        \"name\": \"Roy Walter\",\n        \"address\": \"USA\",\n        \"phone\": \"202-555-0118\"\n    }\n}"
+				},
+				{
+					"name": "UserRegistration Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"Roy\",\n    \"email\": \"roy@gmail.com\",\n    \"name\": \"Roy Walter\",\n    \"address\": \"USA\",\n    \"phone\": \"202-555-0118\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://3d475813-89a1-40d4-9662-0fd6c9215d96.mock.pstmn.io/users/register",
+							"protocol": "https",
+							"host": [
+								"3d475813-89a1-40d4-9662-0fd6c9215d96",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"users",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": ""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"User registration successful\",\n    \"user\": {\n        \"id\": \"1\",\n        \"username\": \"Roy\",\n        \"email\": \"roy@gmail.com\",\n        \"name\": \"Roy Walter\",\n        \"address\": \"USA\",\n        \"phone\": \"202-555-0118\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "users/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"username\",\n  \"email\": \"username@gmail.com\",\n}"
+				},
+				"url": {
+					"raw": "{{url}}/users/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UserLogin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"Roy\",\n  \"email\": \"roy@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://3d475813-89a1-40d4-9662-0fd6c9215d96.mock.pstmn.io/users/login",
+							"protocol": "https",
+							"host": [
+								"3d475813-89a1-40d4-9662-0fd6c9215d96",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "Accepted",
+					"code": 202,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": ""
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"status\": \"success\",\n  \"message\": \"User login successful\",\n  \"user\": {\n    \"id\": \"1\",\n    \"username\": \"Roy\",\n    \"email\": \"roy@gmail.com\",\n    \"name\": \"Roy Walter\",\n    \"address\": \"USA\",\n    \"phone\": \"202-555-0118\"\n  }\n}"
+				},
+				{
+					"name": "UserLogin Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"Roy\",\n  \"email\": \"roy@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://3d475813-89a1-40d4-9662-0fd6c9215d96.mock.pstmn.io/users/login",
+							"protocol": "https",
+							"host": [
+								"3d475813-89a1-40d4-9662-0fd6c9215d96",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "Accepted",
+					"code": 202,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": ""
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"status\": \"success\",\n  \"message\": \"User login successful\",\n  \"user\": {\n    \"id\": \"1\",\n    \"username\": \"Roy\",\n    \"email\": \"roy@gmail.com\",\n    \"name\": \"Roy Walter\",\n    \"address\": \"USA\",\n    \"phone\": \"202-555-0118\"\n  }\n}"
+				}
+			]
+		},
+		{
+			"name": "books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/books",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "SearchBooks",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://3d475813-89a1-40d4-9662-0fd6c9215d96.mock.pstmn.io/books?search=fiction",
+							"protocol": "https",
+							"host": [
+								"3d475813-89a1-40d4-9662-0fd6c9215d96",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "fiction"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": ""
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Treasure Island\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 2,\n        \"name\": \"The Vanishing Half\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Gulliver's Travels\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 4,\n        \"name\": \"The Hobbit, or, There and Back Again\",\n        \"type\": \"fiction\",\n        \"available\": true\n    }\n]"
+				},
+				{
+					"name": "SearchBooks Copy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://3d475813-89a1-40d4-9662-0fd6c9215d96.mock.pstmn.io/books?search=fiction",
+							"protocol": "https",
+							"host": [
+								"3d475813-89a1-40d4-9662-0fd6c9215d96",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "fiction"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": ""
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Treasure Island\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 2,\n        \"name\": \"The Vanishing Half\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Gulliver's Travels\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 4,\n        \"name\": \"The Hobbit, or, There and Back Again\",\n        \"type\": \"fiction\",\n        \"available\": true\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "users/{userId}/cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Gulliver's Travels\",\n    \"quantity\": 2\n}"
+				},
+				"url": {
+					"raw": "{{url}}/users/{userId}/cart",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						"{userId}",
+						"cart"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add to Cart",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Gulliver's Travels\",\n    \"quantity\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://3d475813-89a1-40d4-9662-0fd6c9215d96.mock.pstmn.io/users/{{userId}}/cart",
+							"protocol": "https",
+							"host": [
+								"3d475813-89a1-40d4-9662-0fd6c9215d96",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"users",
+								"{{userId}}",
+								"cart"
+							]
+						}
+					},
+					"status": "Accepted",
+					"code": 202,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": ""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Item added to cart\",\n    \"name\": \"Gulliver's Travels\",\n    \"quantity\": 2\n}"
+				},
+				{
+					"name": "Add to Cart Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Gulliver's Travels\",\n    \"quantity\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://3d475813-89a1-40d4-9662-0fd6c9215d96.mock.pstmn.io/users/{{userId}}/cart",
+							"protocol": "https",
+							"host": [
+								"3d475813-89a1-40d4-9662-0fd6c9215d96",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"users",
+								"{{userId}}",
+								"cart"
+							]
+						}
+					},
+					"status": "Accepted",
+					"code": 202,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": ""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Item added to cart\",\n    \"name\": \"Gulliver's Travels\",\n    \"quantity\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "users/{userId}/checkout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cart\": [\n        {\n            \"id\": \"3\",\n            \"name\": \"Gulliver's Travels\",\n            \"price\": 18,\n            \"quantity\": 2\n        },\n    ],\n    \"total_price\": 18,\n    \"customer_info\": {\n        \"name\": \"John Doe\",\n        \"email\": \"john@example.com\",\n        \"address\": \"123 Main St, City, Country\",\n        \"payment_method\": \"Credit Card\",\n        \"card_details\": {\n            \"card_number\": \"1234 5678 9012 3456\",\n            \"expiration_date\": \"12/24\",\n            \"cvv\": \"123\"\n        }\n    }\n}"
+				},
+				"url": {
+					"raw": "{{url}}/users/{userId}/checkout",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						"{userId}",
+						"checkout"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Checkout",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cart\": [\n        {\n            \"id\": \"4\",\n            \"name\": \"Gulliver's Travels\",\n            \"price\": 18,\n            \"quantity\": 2\n        }\n    ],\n    \"total_price\": 18,\n    \"customer_info\": {\n        \"name\": \"Roy Walter\",\n        \"email\": \"roy@gmail.com\",\n        \"address\": \"USA\",\n        \"payment_method\": \"Credit Card\",\n        \"card_details\": {\n            \"card_number\": \"1234 5678 9012\",\n            \"expiration_date\": \"12/24\",\n            \"cvv\": \"123\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://3d475813-89a1-40d4-9662-0fd6c9215d96.mock.pstmn.io/users/{{userId}}/checkout",
+							"protocol": "https",
+							"host": [
+								"3d475813-89a1-40d4-9662-0fd6c9215d96",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"users",
+								"{{userId}}",
+								"checkout"
+							]
+						}
+					},
+					"status": "Accepted",
+					"code": 202,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": ""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Checkout successful\"\n}"
+				},
+				{
+					"name": "Checkout Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cart\": [\n        {\n            \"id\": \"4\",\n            \"name\": \"Gulliver's Travels\",\n            \"price\": 18,\n            \"quantity\": 2\n        }\n    ],\n    \"total_price\": 18,\n    \"customer_info\": {\n        \"name\": \"Roy Walter\",\n        \"email\": \"roy@gmail.com\",\n        \"address\": \"USA\",\n        \"payment_method\": \"Credit Card\",\n        \"card_details\": {\n            \"card_number\": \"1234 5678 9012\",\n            \"expiration_date\": \"12/24\",\n            \"cvv\": \"123\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://3d475813-89a1-40d4-9662-0fd6c9215d96.mock.pstmn.io/users/{{userId}}/checkout",
+							"protocol": "https",
+							"host": [
+								"3d475813-89a1-40d4-9662-0fd6c9215d96",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"users",
+								"{{userId}}",
+								"checkout"
+							]
+						}
+					},
+					"status": "Accepted",
+					"code": 202,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": ""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Checkout successful\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Search Books",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 3000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(3000);\r",
+							"});\r",
+							"pm.test(\"Data Validation\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].id).to.eql(1);\r",
+							"    pm.expect(jsonData[0].name).to.eql(\"Treasure Island\");\r",
+							"    pm.expect(jsonData[0].type).to.eql(\"fiction\");\r",
+							"    pm.expect(jsonData[0].available).to.eql(true);\r",
+							"\r",
+							"    pm.expect(jsonData[1].id).to.eql(2);\r",
+							"    pm.expect(jsonData[1].name).to.eql(\"The Vanishing Half\");\r",
+							"    pm.expect(jsonData[1].type).to.eql(\"fiction\");\r",
+							"    pm.expect(jsonData[1].available).to.eql(true);\r",
+							"\r",
+							"    pm.expect(jsonData[2].id).to.eql(3);\r",
+							"    pm.expect(jsonData[2].name).to.eql(\"Gulliver's Travels\");\r",
+							"    pm.expect(jsonData[2].type).to.eql(\"fiction\");\r",
+							"    pm.expect(jsonData[2].available).to.eql(true);\r",
+							"\r",
+							"    pm.expect(jsonData[3].id).to.eql(4);\r",
+							"    pm.expect(jsonData[3].name).to.eql(\"The Hobbit, or, There and Back Again\");\r",
+							"    pm.expect(jsonData[3].type).to.eql(\"fiction\");\r",
+							"    pm.expect(jsonData[3].available).to.eql(true);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3d475813-89a1-40d4-9662-0fd6c9215d96.mock.pstmn.io/books?search=fiction",
+					"protocol": "https",
+					"host": [
+						"3d475813-89a1-40d4-9662-0fd6c9215d96",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "fiction"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add to Cart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 202\", function () {\r",
+							"    pm.response.to.have.status(202);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 3000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(3000);\r",
+							"});\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);\r",
+							"});\r",
+							"pm.test(\"Data Validation\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.success).to.eql(true);\r",
+							"    pm.expect(jsonData.message).to.eql(\"Item added to cart\");\r",
+							"    pm.expect(jsonData.name).to.eql(\"Gulliver's Travels\");\r",
+							"    pm.expect(jsonData.quantity).to.eql(2);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Gulliver's Travels\",\n    \"quantity\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3d475813-89a1-40d4-9662-0fd6c9215d96.mock.pstmn.io/users/{{userId}}/cart",
+					"protocol": "https",
+					"host": [
+						"3d475813-89a1-40d4-9662-0fd6c9215d96",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"users",
+						"{{userId}}",
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Checkout",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 202\", function () {\r",
+							"    pm.response.to.have.status(202);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 3000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(3000);\r",
+							"});\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);\r",
+							"});\r",
+							"pm.test(\"Data Validation\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.success).to.eql(true);\r",
+							"    pm.expect(jsonData.message).to.eql(\"Checkout successful\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cart\": [\n        {\n            \"id\": \"4\",\n            \"name\": \"Gulliver's Travels\",\n            \"price\": 18,\n            \"quantity\": 2\n        }\n    ],\n    \"total_price\": 18,\n    \"customer_info\": {\n        \"name\": \"Roy Walter\",\n        \"email\": \"roy@gmail.com\",\n        \"address\": \"USA\",\n        \"payment_method\": \"Credit Card\",\n        \"card_details\": {\n            \"card_number\": \"1234 5678 9012\",\n            \"expiration_date\": \"12/24\",\n            \"cvv\": \"123\"\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3d475813-89a1-40d4-9662-0fd6c9215d96.mock.pstmn.io/users/{{userId}}/checkout",
+					"protocol": "https",
+					"host": [
+						"3d475813-89a1-40d4-9662-0fd6c9215d96",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"users",
+						"{{userId}}",
+						"checkout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserRegistration",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 3000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(3000);\r",
+							"});\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);\r",
+							"});\r",
+							"pm.test(\"Data Validation\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(\"success\");\r",
+							"    pm.expect(jsonData.message).to.eql(\"User registration successful\");\r",
+							"    pm.expect(jsonData.user.id).to.eql(\"1\");\r",
+							"    pm.expect(jsonData.user.username).to.eql(\"Roy\");\r",
+							"    pm.expect(jsonData.user.email).to.eql(\"roy@gmail.com\");\r",
+							"    pm.expect(jsonData.user.name).to.eql(\"Roy Walter\");\r",
+							"    pm.expect(jsonData.user.address).to.eql(\"USA\");\r",
+							"    pm.expect(jsonData.user.phone).to.eql(\"202-555-0118\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Roy\",\n    \"email\": \"roy@gmail.com\",\n    \"name\": \"Roy Walter\",\n    \"address\": \"USA\",\n    \"phone\": \"202-555-0118\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3d475813-89a1-40d4-9662-0fd6c9215d96.mock.pstmn.io/users/register",
+					"protocol": "https",
+					"host": [
+						"3d475813-89a1-40d4-9662-0fd6c9215d96",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 202\", function () {\r",
+							"    pm.response.to.have.status(202);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 3000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(3000);\r",
+							"});\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);\r",
+							"});\r",
+							"pm.test(\"Data Validation\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(\"success\");\r",
+							"    pm.expect(jsonData.message).to.eql(\"User login successful\");\r",
+							"    pm.expect(jsonData.user.id).to.eql(\"1\");\r",
+							"    pm.expect(jsonData.user.username).to.eql(\"Roy\");\r",
+							"    pm.expect(jsonData.user.email).to.eql(\"roy@gmail.com\");\r",
+							"    pm.expect(jsonData.user.name).to.eql(\"Roy Walter\");\r",
+							"    pm.expect(jsonData.user.address).to.eql(\"USA\");\r",
+							"    pm.expect(jsonData.user.phone).to.eql(\"202-555-0118\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"Roy\",\n  \"email\": \"roy@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3d475813-89a1-40d4-9662-0fd6c9215d96.mock.pstmn.io/users/login",
+					"protocol": "https",
+					"host": [
+						"3d475813-89a1-40d4-9662-0fd6c9215d96",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://3d475813-89a1-40d4-9662-0fd6c9215d96.mock.pstmn.io"
+		}
+	]
+}

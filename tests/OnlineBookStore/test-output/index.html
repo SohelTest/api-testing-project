@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\ADMIN\eclipse-workspace\OnlineBookStore\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">15 methods,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AddToCart" class="method navigator-link" hash-for-method="AddtoCart(org.testng.TestRunner@4cb00fa5)">AddtoCart(org.testng.TestRunner@4cb00fa5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.Checkout" class="method navigator-link" hash-for-method="checkout(org.testng.TestRunner@4cb00fa5)">checkout(org.testng.TestRunner@4cb00fa5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.UserRegistration" class="method navigator-link" hash-for-method="missingDetails">missingDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.UserLogin" class="method navigator-link" hash-for-method="missingDetails">missingDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AddToCart" class="method navigator-link" hash-for-method="missingDetails(org.testng.TestRunner@4cb00fa5)">missingDetails(org.testng.TestRunner@4cb00fa5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.Checkout" class="method navigator-link" hash-for-method="missingvalues(org.testng.TestRunner@4cb00fa5)">missingvalues(org.testng.TestRunner@4cb00fa5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.Checkout" class="method navigator-link" hash-for-method="noInputData(org.testng.TestRunner@4cb00fa5)">noInputData(org.testng.TestRunner@4cb00fa5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.UserLogin" class="method navigator-link" hash-for-method="noInputData">noInputData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AddToCart" class="method navigator-link" hash-for-method="noInputDetails(org.testng.TestRunner@4cb00fa5)">noInputDetails(org.testng.TestRunner@4cb00fa5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.UserLogin" class="method navigator-link" hash-for-method="successfulLogin(org.testng.TestRunner@4cb00fa5)">successfulLogin(org.testng.TestRunner@4cb00fa5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.UserRegistration" class="method navigator-link" hash-for-method="successfulRegistration">successfulRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.SearchBooks" class="method navigator-link" hash-for-method="successfulSearchBooks">successfulSearchBooks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.Checkout" class="method navigator-link" hash-for-method="withoutCardDetails(org.testng.TestRunner@4cb00fa5)">withoutCardDetails(org.testng.TestRunner@4cb00fa5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.UserRegistration" class="method navigator-link" hash-for-method="withoutInputData">withoutInputData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.SearchBooks" class="method navigator-link" hash-for-method="wrongSearchData">wrongSearchData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.test.SearchBooks</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulSearchBooks">
+                  </a> <!-- successfulSearchBooks -->
+                  <span class="method-name">successfulSearchBooks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wrongSearchData">
+                  </a> <!-- wrongSearchData -->
+                  <span class="method-name">wrongSearchData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.test.AddToCart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddtoCart(org.testng.TestRunner@4cb00fa5)">
+                  </a> <!-- AddtoCart(org.testng.TestRunner@4cb00fa5) -->
+                  <span class="method-name">AddtoCart</span>
+                  <span class="parameters">(org.testng.TestRunner@4cb00fa5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="missingDetails(org.testng.TestRunner@4cb00fa5)">
+                  </a> <!-- missingDetails(org.testng.TestRunner@4cb00fa5) -->
+                  <span class="method-name">missingDetails</span>
+                  <span class="parameters">(org.testng.TestRunner@4cb00fa5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="noInputDetails(org.testng.TestRunner@4cb00fa5)">
+                  </a> <!-- noInputDetails(org.testng.TestRunner@4cb00fa5) -->
+                  <span class="method-name">noInputDetails</span>
+                  <span class="parameters">(org.testng.TestRunner@4cb00fa5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.test.Checkout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkout(org.testng.TestRunner@4cb00fa5)">
+                  </a> <!-- checkout(org.testng.TestRunner@4cb00fa5) -->
+                  <span class="method-name">checkout</span>
+                  <span class="parameters">(org.testng.TestRunner@4cb00fa5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="missingvalues(org.testng.TestRunner@4cb00fa5)">
+                  </a> <!-- missingvalues(org.testng.TestRunner@4cb00fa5) -->
+                  <span class="method-name">missingvalues</span>
+                  <span class="parameters">(org.testng.TestRunner@4cb00fa5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="noInputData(org.testng.TestRunner@4cb00fa5)">
+                  </a> <!-- noInputData(org.testng.TestRunner@4cb00fa5) -->
+                  <span class="method-name">noInputData</span>
+                  <span class="parameters">(org.testng.TestRunner@4cb00fa5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="withoutCardDetails(org.testng.TestRunner@4cb00fa5)">
+                  </a> <!-- withoutCardDetails(org.testng.TestRunner@4cb00fa5) -->
+                  <span class="method-name">withoutCardDetails</span>
+                  <span class="parameters">(org.testng.TestRunner@4cb00fa5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.test.UserRegistration</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="missingDetails">
+                  </a> <!-- missingDetails -->
+                  <span class="method-name">missingDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulRegistration">
+                  </a> <!-- successfulRegistration -->
+                  <span class="method-name">successfulRegistration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="withoutInputData">
+                  </a> <!-- withoutInputData -->
+                  <span class="method-name">withoutInputData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.test.UserLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="missingDetails">
+                  </a> <!-- missingDetails -->
+                  <span class="method-name">missingDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="noInputData">
+                  </a> <!-- noInputData -->
+                  <span class="method-name">noInputData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulLogin(org.testng.TestRunner@4cb00fa5)">
+                  </a> <!-- successfulLogin(org.testng.TestRunner@4cb00fa5) -->
+                  <span class="method-name">successfulLogin</span>
+                  <span class="parameters">(org.testng.TestRunner@4cb00fa5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\ADMIN\eclipse-workspace\OnlineBookStore\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;api.test.UserLogin&quot;/&gt;
+      &lt;class name=&quot;api.test.AddToCart&quot;/&gt;
+      &lt;class name=&quot;api.test.UserRegistration&quot;/&gt;
+      &lt;class name=&quot;api.test.SearchBooks&quot;/&gt;
+      &lt;class name=&quot;api.test.Checkout&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(15);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'missingDetails')
+data.setCell(0, 2, 'api.test.UserLogin')
+data.setCell(0, 3, 3411);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'successfulLogin')
+data.setCell(1, 2, 'api.test.UserLogin')
+data.setCell(1, 3, 1666);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'wrongSearchData')
+data.setCell(2, 2, 'api.test.SearchBooks')
+data.setCell(2, 3, 1531);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkout')
+data.setCell(3, 2, 'api.test.Checkout')
+data.setCell(3, 3, 1508);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'successfulSearchBooks')
+data.setCell(4, 2, 'api.test.SearchBooks')
+data.setCell(4, 3, 1484);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'AddtoCart')
+data.setCell(5, 2, 'api.test.AddToCart')
+data.setCell(5, 3, 1460);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'noInputData')
+data.setCell(6, 2, 'api.test.UserLogin')
+data.setCell(6, 3, 1428);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'successfulRegistration')
+data.setCell(7, 2, 'api.test.UserRegistration')
+data.setCell(7, 3, 1282);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'missingDetails')
+data.setCell(8, 2, 'api.test.AddToCart')
+data.setCell(8, 3, 1255);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'withoutInputData')
+data.setCell(9, 2, 'api.test.UserRegistration')
+data.setCell(9, 3, 1251);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'missingDetails')
+data.setCell(10, 2, 'api.test.UserRegistration')
+data.setCell(10, 3, 1224);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'missingvalues')
+data.setCell(11, 2, 'api.test.Checkout')
+data.setCell(11, 3, 1104);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'noInputDetails')
+data.setCell(12, 2, 'api.test.AddToCart')
+data.setCell(12, 3, 1095);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'withoutCardDetails')
+data.setCell(13, 2, 'api.test.Checkout')
+data.setCell(13, 3, 1078);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'noInputData')
+data.setCell(14, 2, 'api.test.Checkout')
+data.setCell(14, 3, 1069);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.test.UserLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">missingDetails</span>
+                <span class="method-start">13 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">noInputData</span>
+                <span class="method-start">3503 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">successfulLogin(org.testng.TestRunner@4cb00fa5)</span>
+                <span class="method-start">4941 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.test.AddToCart</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6614 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">AddtoCart(org.testng.TestRunner@4cb00fa5)</span>
+                <span class="method-start">6614 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">missingDetails(org.testng.TestRunner@4cb00fa5)</span>
+                <span class="method-start">8078 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">noInputDetails(org.testng.TestRunner@4cb00fa5)</span>
+                <span class="method-start">9337 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.test.UserRegistration</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">10443 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">missingDetails</span>
+                <span class="method-start">10444 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">successfulRegistration</span>
+                <span class="method-start">11675 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">withoutInputData</span>
+                <span class="method-start">12971 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.test.SearchBooks</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">14226 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">successfulSearchBooks</span>
+                <span class="method-start">14227 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">wrongSearchData</span>
+                <span class="method-start">15716 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.test.Checkout</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">17251 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">checkout(org.testng.TestRunner@4cb00fa5)</span>
+                <span class="method-start">17251 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">missingvalues(org.testng.TestRunner@4cb00fa5)</span>
+                <span class="method-start">18765 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">noInputData(org.testng.TestRunner@4cb00fa5)</span>
+                <span class="method-start">19872 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">withoutCardDetails(org.testng.TestRunner@4cb00fa5)</span>
+                <span class="method-start">20955 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
