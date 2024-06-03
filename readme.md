@@ -1,5 +1,8 @@
 ------------------------------------------------------------api-testing-project-------------------------------------------------------------------------------
 
+
+GitHub link to the project : https://github.com/SohelTest/api-testing-project/tree/master
+
 Below are the details of API-Testing-Project :
 
 --> Used hybrid framework for creating automation script
