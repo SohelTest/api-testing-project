@@ -108,6 +108,7 @@ Below are the details of API-Testing-Project :
      In General under Git put the github test script url
      Under Root POM, enter pom.xml
      Under goals and options enter clean test
+     We can setup mail and bugs as per our requirements
      Apply and Save
      Click on Build now to start the test
 
